@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  root 'user#index'
+  root 'static_pages#home'
+  # root 'user#index'
 
   resources :users do
     resources :trips
-end
+  end
 
   resources :trips do
     resources :locations

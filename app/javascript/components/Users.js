@@ -4,7 +4,7 @@ const Users = ({users}) => {
   return (
     <>
       <h1>All Users</h1>
-      <a href="/users/new">Add Billboard</a>
+      <a href="/users/new">Add User</a>
       {
         users.map( (user) => (
           <div>
