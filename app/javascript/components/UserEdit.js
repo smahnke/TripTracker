@@ -6,8 +6,8 @@ const UserEdit = ({user}) => {
   const defaultPassword = password ? password : "";
   return (
     <>
-      <h1>Editing {title}</h1>
-      <form action={'/users/$(id)'} method='post'>
+      <h1>Editing {email}</h1>
+      <form action={`/users/${id}`} method='post'>
         <input type='hidden' name='_method' value='patch' />
         <input
           placeholder='Name'
