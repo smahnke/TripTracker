@@ -1,7 +1,7 @@
 import React from 'react';
 
 const User = ({ user }) => {
-  const { email, password, id } = user;
+  const { id, email, password } = user;
   
   return (
     <>
