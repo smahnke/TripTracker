@@ -19,7 +19,7 @@ class TripsController < ApplicationController
   def create
     @trip = @user.trips.new(trip_params)
     if @trip.save
-      redirect_to root_path
+      redirect_to @user
     else
       render component: 'TripNew', props: {trip: @trip, user: @user}
     end
@@ -31,7 +31,7 @@ class TripsController < ApplicationController
 
   def update
     if @trip.update(trip_params)
-      redirect_to root_path
+      redirect_to [@user, @trip]
     else
       render component: 'TripUpdate', props: {trip: @trip, user: @user}
     end
@@ -39,7 +39,7 @@ class TripsController < ApplicationController
 
   def destroy
     @trip.destroy
-    redirect_to root_path
+    redirect_to @user
   end
 
   private
