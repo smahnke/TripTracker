@@ -28,6 +28,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'react-rails'
 
+gem 'bcrypt'
+
 group :development, :test do
   gem 'pry'
   gem 'faker'
