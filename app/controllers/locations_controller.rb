@@ -7,7 +7,7 @@ before_action :set_location, only: [:show, :edit, :update, :destroy]
 
   def index
     @locations = @trip.locations
-    render component: "Locations", props: { locations: @locations, trips: @trips }
+    render component: "Locations", props: { locations: @locations, trip: @trip }
   end
 
   def show
@@ -60,7 +60,7 @@ before_action :set_location, only: [:show, :edit, :update, :destroy]
     @location = Location.find(params[:id])
   end
 
-  def _params
-    params.require(:location).permit(:l_name)
+  def location_params
+    params.require(:location).permit(:L_name)
   end
 end

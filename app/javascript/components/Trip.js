@@ -16,7 +16,7 @@ const Trip = ({ user, trip }) => {
       <br />
       <a href={'/trips/' + id + '/edit'}>Edit Trip</a>
       <br />
-      <a href={`/trips/${id}/locations`}>Show Locations</a>
+      <a href={`/trips/${trip.id}/locations`}>Show Locations</a>
     </>
   )
   }
