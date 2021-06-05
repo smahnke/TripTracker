@@ -1,8 +1,8 @@
 import React from 'react';
 
 const UserEdit = ({user}) => {
-  const { name, password, id } = user
-  const defaultName = name ? name : "";
+  const { email, password, id } = user
+  const defaultEmail = email ? email : "";
   const defaultPassword = password ? password : "";
   return (
     <>
@@ -13,8 +13,8 @@ const UserEdit = ({user}) => {
           placeholder='Name'
           type='text'
           required
-          defaultValue={defaultName}
-          name='user[name]'
+          defaultValue={defaultEmail}
+          name='user[email]'
         />
         <input
           placeholder='Password'

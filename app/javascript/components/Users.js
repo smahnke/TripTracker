@@ -8,7 +8,7 @@ const Users = ({users}) => {
       {
         users.map( (user) => (
           <div>
-            <h3>{user.name} {' '} {user.password}</h3>
+            <h3>{user.email} {' '} {user.password}</h3>
           <a href={'/users/' + user.id}>Show User</a>
           {' '}
           <a href={'/users/' + user.id + '/edit'}>Edit User</a>

@@ -1,11 +1,11 @@
 import React from 'react';
 
 const User = ({ user }) => {
-  const { id, name, password } = user;
+  const { email, password, id } = user;
   
   return (
     <>
-      <h1>User: {name}</h1>
+      <h1>User: {email}</h1>
     
       <a href='/'>Back to Main Menu</a>
       <br />
