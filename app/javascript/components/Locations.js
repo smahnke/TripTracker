@@ -8,7 +8,7 @@ const Locations = ({ trip, locations }) => {
   return (
     <>
       <h1>Locations from the {name} Trip</h1>
-      <a href={`/trips/${id}/locations`}>Back to {name} trip</a>
+      <a href={`/trips/${id}`}>Back to {name} trip</a>
       <br />
       <a href={`/trips/${id}/locations/new`}>New Location</a>
       {
