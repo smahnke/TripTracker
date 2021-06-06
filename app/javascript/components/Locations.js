@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Locations = ({ trip, locations }) => {
-  const { name } = trip
+  const { name, duration, id } = trip
   
   //  trip.id
   
